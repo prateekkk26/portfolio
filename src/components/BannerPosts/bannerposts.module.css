@@ -1,5 +1,8 @@
-.wrapper {
+.container {
 	padding: 1rem;
+}
+
+.wrapper {
 	margin-top: 1.5rem;
 }
 
@@ -27,21 +30,21 @@
 	width: 100%;
 	display: flex;
 	background-color: var(--lightGray);
-	border-radius: .5rem;
 }
 
 .imageContainer {
-	width: 30%;
+	width: 40%;
 }
 
 .img {
 	width: 100%;
+	height: 100%;
 }
 
 .content {
-	width: 70%;
-	padding: 0.5rem;
+	width: 60%;
 	align-self: center;
+	padding: 0.2rem 0.7rem;
 }
 
 .content p{
