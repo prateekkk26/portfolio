@@ -1,0 +1,49 @@
+.about {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 1rem;
+	margin-bottom: 7rem;
+}
+
+.container {
+	width: 100%;
+}
+
+.content {
+	width: 100%;
+	display: flex;
+	clear: both;
+}
+
+.imageContainer {
+	width: 40%;
+}
+
+.img {
+	width: 100%;
+}
+
+.info {
+	width: 60%;
+	align-self: center;
+}
+
+.info p {
+	font-size: 1.5rem;
+	line-height: 2.3rem;
+	text-align: center;
+	padding: 1rem;
+}
+
+@media screen and (max-width: 700px) {
+	.content {
+		flex-direction: column;
+	}
+	.imageContainer {
+		width: 100%
+	}
+	.info {
+		width: 100%;
+		margin-top: 2.5rem;
+	}
+}

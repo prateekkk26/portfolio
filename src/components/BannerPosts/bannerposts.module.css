@@ -1,0 +1,60 @@
+.wrapper {
+	padding: 1rem;
+	margin-top: 1.5rem;
+}
+
+.bannerPosts::after {
+	content: "";
+	margin: 3rem auto;
+	height: 0.4rem;
+	background-color: var(--lightGray);
+	display: block;
+	width: 80%;
+}
+
+.container h3 {
+	font-weight: bold;
+	margin: 0 0 2rem 0;
+	text-align: center;
+}
+
+.posts {
+	color: var(--mainBlack);
+}
+
+
+.postContainer {
+	width: 100%;
+	display: flex;
+	background-color: var(--lightGray);
+	border-radius: .5rem;
+}
+
+.imageContainer {
+	width: 30%;
+}
+
+.img {
+	width: 100%;
+}
+
+.content {
+	width: 70%;
+	padding: 0.5rem;
+	align-self: center;
+}
+
+.content p{
+	font-weight: bold;
+	color: var(--mainBlack);
+}
+
+.content p:last-child {
+	color: var(--darkGray);
+}
+
+@media screen and (max-width: 700px) {
+	.content p{
+		font-size: 1.3rem;
+	}
+}

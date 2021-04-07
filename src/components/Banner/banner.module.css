@@ -1,0 +1,57 @@
+.banner {
+	width: 100%;
+	padding: 1rem;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--mainWhite);
+}
+
+.aboutAuthor {
+	text-align: center;
+}
+
+.aboutAuthor::after {
+	content: "";
+	margin: 3rem auto;
+	height: 0.4rem;
+	background-color: var(--lightGray);
+	display: block;
+	width: 80%;
+}
+
+.aboutAuthor h3, h4 {
+	font-weight: bold;
+	margin: 2rem auto;
+}
+
+.profile {
+	max-width: 50%;
+	margin: 1rem auto;
+	border-radius: 50%;
+	border: 1px solid transparent;
+	box-shadow: 0 0 7px var(--mainPurple);
+}
+
+.aboutAuthor p {
+	max-width: 80%;
+	margin: 1rem auto;
+	text-align: center;
+	font-size: 1rem;
+}
+
+.links {
+	margin: 1rem auto;
+}
+
+@media screen and (max-width: 700px) {
+	.banner {
+		margin-top: 2.5rem;
+	}
+	.aboutAuthor p {
+		font-size: 1.4rem;
+	}
+}

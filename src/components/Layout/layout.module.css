@@ -1,0 +1,9 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--lightGray);
+}
+
+.main {
+	
+}

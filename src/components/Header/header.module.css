@@ -1,0 +1,83 @@
+.header {
+	width: 100%;
+	height: 94vh;
+	padding: 1rem;
+	background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,.9)), url('../../images/Waiau.png');
+	/*background-color: var(--mainWhite);*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 7rem;
+	box-shadow: 0 8px 20px -6px var(--mainBlack);
+}
+
+.container {
+	max-width: 100rem;
+	margin: 2rem auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.imageContainer {
+	width: 50%;
+	text-align: center;
+}
+
+.headerImage {
+	width: 80%;
+	z-index: 0;
+	margin: 0 auto;
+}
+
+.about {
+	align-self: center;
+	color: var(--mainBlack);
+	width: 50%;
+}
+
+.about p {
+	font-size: 2.5rem;
+	font-weight: 400;
+	color: var(--mainWhite);
+}
+
+.about p:first-child {
+	color: var(--mainPurple);
+}
+
+.about h1 {
+	font-size: 8rem;
+	font-weight: bold;
+	color: var(--mainWhite);
+}
+
+.about h1:nth-child(3) {
+	color: var(--mainPurple);
+}
+
+.links {
+	display: inline-block;
+}
+
+
+@media only screen and (max-width: 700px) {
+	.header {
+		height: auto;
+	}
+	.container {
+		flex-direction: column-reverse;
+	}
+	.imageContainer {
+		width: 70%;
+		margin: 2rem auto;
+	}
+	.about {
+		width: 100%;
+		text-align: center;
+		margin: 2rem 0;
+	}
+	.links {
+		display: block;
+	}
+}

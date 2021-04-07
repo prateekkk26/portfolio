@@ -1,0 +1,32 @@
+.categoryTemplate {
+	width: 100%;
+	padding: 1rem;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 4rem auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.postsContainer {
+	width: 75%;
+}
+
+.bannerContainer {
+	width: 25%;
+}
+
+@media screen and (max-width: 700px) {
+	.container {
+		flex-direction: column;
+	}
+	.postsContainer {
+		width: 100%;
+	}
+	.bannerContainer {
+		width: 100%;
+	}
+}

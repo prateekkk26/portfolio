@@ -1,0 +1,27 @@
+.bannerCategory {
+	width: 100%;
+	padding: 1rem;
+}
+
+.container {
+	text-align: center;
+}
+
+.container h3 {
+	margin:  0 0 2rem 0;
+	font-weight: bold;
+}
+
+.container ul {
+	list-style-type: none;
+}
+
+.link {
+	color: var(--darkGray);
+	font-size: 1.3rem;
+	margin-bottom: 1rem;
+}
+
+.link:hover {
+	color: var(--mainPurple);
+}

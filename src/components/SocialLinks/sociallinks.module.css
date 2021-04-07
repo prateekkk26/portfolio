@@ -1,0 +1,25 @@
+.socialLinks {
+	width: 100%;
+	display: flex;
+	margin-top: 2rem;
+	justify-content: center;
+}
+
+.route {
+	margin-left: 1.5rem;
+}
+
+.route:first-child {
+	margin-left: 0;
+}
+
+.icon {
+	font-size: 2.5rem;
+	transition: all 1s;
+	color: var(--mainPurple);
+}
+
+.icon:hover {
+	transform: scale(1.5);
+	color: var(--mainPurple);
+}
