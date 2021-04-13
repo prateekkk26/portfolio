@@ -16,8 +16,13 @@
 	list-style-type: none;
 }
 
+.container li {
+	margin-bottom: 1.5rem;
+}
+
 .link {
-	color: var(--darkGray);
+	color: var(--mainPurple);
+	font-weight: bold;
 	font-size: 1.3rem;
 	margin-bottom: 1rem;
 }

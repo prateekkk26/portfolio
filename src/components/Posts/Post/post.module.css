@@ -2,6 +2,8 @@
 	width: 100%;
 	height: auto;
 	background-color: var(--mainWhite);
+	margin-bottom: 2rem;
+	text-align: left;
 }
 
 .container {
@@ -24,6 +26,11 @@
 	font-weight: bold;
 	font-size: 1.4rem;
 	margin: 1rem 0 2rem 0;
+	display: block;
+}
+
+.category:hover {
+	color: var(--mainPurple);
 }
 
 .metaInfo {

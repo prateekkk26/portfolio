@@ -7,38 +7,15 @@ import { graphql, useStaticQuery } from 'gatsby'
 
 import * as styles from './categoryTemplate.module.css'
 
-const CategoryTemplate = (props) => {
-	const data = useStaticQuery(graphql`
-		query hero ($category: String){
-		  allMdx(filter: {frontmatter: {category: {eq: $category}}}) {
-		    nodes {
-		      id
-		      excerpt
-		      frontmatter {
-		        author
-		        category
-		        date(formatString: "MMMM Do, YYYY")
-		        readTime
-		        title
-		        image {
-		          childImageSharp {
-		            fluid {
-		              ...GatsbyImageSharpFluid
-		            }
-		          }
-		        }
-		      }
-		    }
-		  }
-		}
-	`)
+const CategoryTemplate = ({pageContext, data}) => {
 	const {allMdx: {nodes: posts}}= data
+	console.log(data)
 
 	return (
 		<div className="posts">
 			<Layout>
 				<div className={styles.categoryTemplate}>
-		          <Title title={`Category / ${props.pageContext.category}`} />
+		          <Title title={`Category / ${pageContext.category}`} />
 		          <div className={styles.container}>
 		            <div className={styles.postsContainer}>
 		              <Posts posts={posts} />
@@ -52,5 +29,35 @@ const CategoryTemplate = (props) => {
 		</div>
 	)
 }
+
+export const query = graphql`
+  query getCategory($category: String){
+    allMdx(
+      sort: {fields: frontmatter___date, order: DESC}
+      filter: {frontmatter: {category: {eq: $category}}}
+    ) {
+      nodes {
+        excerpt
+        frontmatter {
+          category
+          date(formatString: "MMMM Do, YYYY")
+          slug
+          title
+          author
+          readTime
+          image {
+            childImageSharp {
+              fluid {
+                src
+              }
+            }
+          }
+        }
+        body
+        id
+      }
+    }
+  }
+`
 
 export default CategoryTemplate

@@ -4,3 +4,45 @@
 	line-height: 2.3rem;
 	color: var(--darkGray);
 }
+
+.markdownImg {
+	max-width: 100%;
+	margin: 2.5rem auto;
+}
+
+.markdownImg img {
+	width: 100%;
+}
+
+.markdownCode {
+	background-color: var(--mainBlack);
+	padding: 1rem;
+	max-width: 100%;
+	margin: 1rem auto;
+}
+
+.language-code {
+	color: var(--mainPurple);
+}
+
+blockquote {
+	border-left: 4px solid var(--mainPurple);
+	padding: 1rem;
+	background-color: var(--lightGray);
+}
+
+.markdownSection li {
+	list-style-position: inside;
+}
+
+.markdownSection span {
+	color: var(--mainPurple);
+	background-color: var(--mainBlack);
+	padding: 0.2rem 0.5rem;
+	border-radius: 0.5rem;
+}
+
+.markdownSection a {
+	text-decoration: none;
+	color: var(--mainPurple);
+}

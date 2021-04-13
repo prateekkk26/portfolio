@@ -38,7 +38,7 @@ const Banner = () => {
 						proficient with many other web technologies.  
 					</p>
 					<div className={styles.links}>
-						<SocialLinks align="center" />
+						<SocialLinks />
 					</div>
 				</div>
 				<div>

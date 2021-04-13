@@ -7,28 +7,7 @@ import Img from 'gatsby-image'
 import * as styles from './postTemplate.module.css'
 import "../../styles/markdown.css"
 
-const PostTemplate = () => {
-	const data = useStaticQuery(graphql`
-    query getPost($slug: String){
-      mdx(frontmatter: {slug: {eq: $slug}}) {
-        body
-        frontmatter {
-          author
-          category
-          date(formatString: "MMMM Do, YYYY")
-          readTime
-          title
-          image {
-            childImageSharp {
-              fluid {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
+const PostTemplate = ({data}) => {
 
 	const {
 		mdx: {
@@ -81,5 +60,28 @@ const PostTemplate = () => {
 		</Layout>
 	)
 }
+
+export const query = graphql`
+	query getPost($slug: String){
+      mdx(frontmatter: {slug: {eq: $slug}}) {
+        body
+        frontmatter {
+          author
+          category
+          date(formatString: "MMMM Do, YYYY")
+          readTime
+          slug
+          title
+          image {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }	
+`
 
 export default PostTemplate

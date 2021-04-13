@@ -1,0 +1,42 @@
+.pageNotFound {
+	width: 100%;
+	padding: 1rem;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 5rem auto;
+	text-align: center;
+}
+
+.container h1 {
+	font-weight: bold;
+	color: var(--mainPurple);
+	font-size: 9rem;
+}
+
+.container h3 {
+	font-size: 4.5rem;
+	color: var(--mainPurple);
+	font-weight: bold;
+}
+
+.container p {
+	font-size: 2rem;
+	margin: 2rem 0;
+}
+
+.btn {
+	color: var(--lightGray);
+	padding: 2rem 3rem;
+	background-color: var(--mainPurple);
+	display: inline-block;
+	font-size: 2.5rem;
+	margin-top: 1.5rem;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	color: var(--lightGray);
+	opacity: 0.8;
+}

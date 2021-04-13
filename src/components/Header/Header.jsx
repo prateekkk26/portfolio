@@ -30,7 +30,7 @@ const Header = () => {
 					<h1>Rawat</h1>
 					<p>Front End Developer</p>
 					<div className={styles.links}>
-						<SocialLinks align="left" />
+						<SocialLinks />
 					</div>
 				</div>
 				<div className={styles.imageContainer}>

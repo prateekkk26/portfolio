@@ -34,7 +34,13 @@ const Post = ({post}) => {
 					/>
 				</div>
 				<div className={styles.content}>
-					<p className={styles.category}>{category}</p>
+					<Link 
+						to={`/category/${category}`} 
+						className={styles.category}
+						style={{textDecoration: "none"}}
+					>
+						{category}
+					</Link>
 					<h1>{title}</h1>
 					<div className={styles.metaInfo}>
 						<p className={styles.metaItem}>By <span className="font-weight-bold text-dark">{author}</span></p>

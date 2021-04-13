@@ -1,0 +1,190 @@
+---
+title: Know the fundamentals of HTML & CSS
+date: 2021-08-11
+category: HTML&CSS
+slug: know-the-fundamentals-of-html-&-css
+author: Prateek Rawat
+readTime: 4
+image: ./images/html-and-css-1.jpg
+---
+
+<div className="markdownSection">
+
+If you'are looking forward to becoming a professional Web Developer, then HTML is probably the first language you need to master.
+
+#### What is HTML?
+
+> HTML or HyperText Markup Language is the standard markup language for documents designed to be displayed in a web browser.
+
+HTML code looks just like regular text. It makes use of the angle brackets. These angle brackets contains the markup code which tells the browser how to display the document data. There are three components that form the basic building blocks of HTML code: **tags**, **elements** and **attributes**. Tags usually come in pairs, and the difference between an opening tag and a closing tag is that th first symbol inside th brackets of a closing tag is a slash "/" symbol.  Here's an example of how we can use tags to transform text. 
+
+If we add the sentence "Web Development is fun." to our HTML file, it will simple display as regular text like this:
+
+Web Development is fun.
+
+But if we want to have the sentence display in bold text, we can add a <span>&lt;b&gt;</span> opening tag before the text, and a <span>&lt;/b&gt;</span> closing tag after the text. The "b" in the tag stands for bold.
+Therefore if we add &lt;b&gt;Web Development is fun.&lt;/b&gt; to our HTML file, it will display like this:
+
+**Web Development is fun.**
+
+We can also nest tags within each other. For example, adding <span>&lt;b&gt;&lt;i&gt;Web Development is fun.&lt;/i&gt;&lt;/b&gt;</span> to our file, we will get this:
+
+**_Web Development is fun._**
+
+In this way we transformed our text to bold as well as italics. 
+An **Element** is an opening tag, a closing tag, and all the content that is included between the two tags. If we take a look at our previous example of how we used bold tags:
+
+<span>&lt;b&gt;Web Development is fun.&lt;/b&gt;</span>
+
+In this example, <span>&lt;b&gt;</span> is the opening tag, <span>&lt;/b&gt;</span> is the closing tag, and "Web Development is fun." is the content. When we put it all together, we have an element. Thus, a webpage is simply an HTML document thatis filled with complete HTML elements.
+The picture below shows the structure of our web page with their appropriate tags: 
+
+<div className="markdownImg">
+	<img 
+		src="https://i.pinimg.com/originals/46/e2/1c/46e21c46e7001fca6554cd45562268fa.jpg"
+	/>
+</div>
+
+A simple html program :
+
+<div className="markdownCode">
+
+```code
+<html>
+	<head>
+		<title>My Webpage</title>
+	</head>
+	<body>
+		<p>This is my first web page. I am looking forward to customize it soon</p>
+	</body>
+	<footer>
+		Copyrights reserved.
+	</footer>
+</html>
+```
+
+</div>
+
+A list of widely used HTML tags is given below:
+
+<span>&lt;html&gt;</span> - The entire HTML document<br />
+<span>&lt;head&gt;</span> - The head of the HTML document<br />
+<span>&lt;body&gt;</span> - All the content in the HTML document<br />
+<span>&lt;title&gt;</span> - The title of the document<br />
+<span>&lt;h1&gt;</span> to <span>&lt;h6&gt;</span> - Levels of heading<br />
+<span>&lt;p&gt;</span> - Used to make a new paragraph<br />
+<span>&lt;br&gt;</span> - Shows a line break<br />
+<span>&lt;hr&gt;</span> - Creates a horizontal line on the page<br />
+<span>&lt;a href = ""&gt;</span> - Links the current html file to another<br />
+<span>&lt;img src=""&gt;</span> - Put the url or the name of the image in the quotes<br />
+<span>&lt;b&gt;</span> - Makes text bold<br />
+<span>&lt;i&gt;</span> - Makes text italic<br/><br/>
+
+
+<a href="https://www.wpkube.com/html5-cheat-sheet/" target="_blank">HTML5 cheatsheet</a>
+
+---
+
+#### What is CSS
+
+> Cascading Style Sheets or CSS is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.
+
+The basic CSS rule syntax is given below:
+
+<div className="markdownCode">
+
+```code
+selector {
+	property1: value;
+	property2: value;
+}
+```
+</div>
+
+Here, the selector identifies which HTML elements are affected by the rule, using actualy names such as **&lt;body&gt;**, or other identifiers such as **class** attribute values. When applied to the element names, selector is simply replaced by the name of that block. For classes, the syntax is <span>.classname</span>; for IDs, <span>#idname</span>. A class selector matches all elements that have a **class** attribute with the value specified. On the other hand the name of the **id** selector should be unique and can be applied to only a single element. 
+
+A CSS can be defined in out HTML file in basically 3 ways:
+
+1. **Internal CSS:** It requires us to use <span>&lt;style&gt;</span>	tag in the <span>&lt;head&gt;</span> section of your HTML document. This type of style is effective method for styling a single page.
+
+<div class="markdownCode">
+
+```code
+<!DOCTYPE.html>
+<html>
+<head>
+	<title>Internal CSS</title>
+	<style type="text/css">
+		p {
+			color: navy;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<p>Prateek Rawat</p>
+</body>
+</html>
+```
+</div>
+
+Output will be:
+
+<p style={{color: "navy", fontWeight: "bold"}}>Prateek Rawat</p>
+
+2. **External CSS:** With external CSS, we can link our web pages to an external <span>.css</span> file, which can be created in any text editor. This is the most efficient method for styling a large website.
+
+styles.css
+
+<div className="markdownCode">
+
+```code
+h3 {
+	color: red;
+	border: 2px solid red;
+	padding: 1rem;
+}
+```
+	
+</div>
+
+index.html
+<div className="markdownCode">
+
+```code
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My webpage</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+	<h3>CSS is fun</h3>
+</body>
+</html>
+```
+	
+</div>
+
+Output will be:
+
+<h3 style={{color: "red", border: "2px solid red", padding: "1rem"}}>CSS is fun</h3>
+
+3. **Inline CSS:** It is used to styles a specific HTML element. For using this type of style, we need to add the <span>style</span> attribute to each HTML tag.
+
+<div className="markdownCode">
+
+```code
+<p style="font-size: 15px; text-shadow: 0 0 8px red;">Text Shadow</p>
+```
+	
+</div>
+
+Output will be:
+
+<p style={{fontSize: "15px", textShadow: "0 0 8px red"}}>Text Shadow</p><br/>
+
+<a href="https://hackr.io/blog/css-cheat-sheet" target="_blank">CSS cheatsheet</a>
+
+
+</div>

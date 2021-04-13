@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import Title from '../Title/Title'
 import Posts from '../Posts/Posts'
 import * as styles from './recentposts.module.css'
@@ -37,7 +37,10 @@ const RecentPosts = () => {
 				<Title title="Recent Posts" />
 				<div className={styles.posts}>
 					<Posts posts={posts} />
-				</div>
+	        <Link to="/posts" style={{
+            textDecoration: "none",
+          }} className={styles.btn}>ALL POSTS</Link>
+  			</div>
 			</div>
 		</div>
 	)

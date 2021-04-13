@@ -26,7 +26,7 @@ const Navbar = ({ toggle }) => {
 		<div className={`${styles.navbar}`}>
 			<nav className={styles.container}>
 				<div className={styles.logoContainer}>
-					<pre><code><span>&lt;/</span>PR<span>></span></code></pre>
+					<Link to="/" style={{textDecoration: "none"}}><pre><code><span>&lt;/</span>PR<span>></span></code></pre></Link>
 				</div>
 				<div className={styles.linksContainer}>
 					<ul>

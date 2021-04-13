@@ -1,0 +1,9 @@
+.projects {
+	width: 100%;
+	padding: 1rem;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+}

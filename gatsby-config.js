@@ -8,6 +8,17 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
+      resolve: "gatsby-source-graphql",
+      options: {
+        // Arbitrary name for the remote schema Query type
+        typeName: "GraphCMS",
+        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+        fieldName: "gsms",
+        // Url to query from
+        url: "https://api-ap-northeast-1.graphcms.com/v2/ckndhnbefv6fd01xpf09y85un/master",
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

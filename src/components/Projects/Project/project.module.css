@@ -1,0 +1,59 @@
+.project {
+	width: 100%;
+	margin-top: 5rem;
+	box-shadow: 0 0 9px var(--mainBlack);
+	background: linear-gradient(rgba(191,85,236, 0.8), rgba(191,85,236,0.9));
+}
+
+.container {
+	width: 100%;
+}
+
+.img {
+	width: 100%;
+	filter: grayscale(1);
+}
+
+.container:hover img {
+	filter: initial;
+}
+
+.content {
+	padding: 1.5rem;
+}
+
+.content h3 {
+	font-weight: bold;
+	font-size: 3.5rem;
+	margin: 1.5rem 0;
+}
+
+.content p {
+	font-size: 1.5rem;
+}
+
+.content span {
+	font-weight: bold;
+	margin-right: 1rem;
+}
+
+.content a {
+	text-decoration: none;	
+	color: var(--mainBlack);
+	text-shadow: 0 0 2px var(--mainBlack);
+}
+
+.tech {
+	display: flex;
+	margin-top: 2rem;
+	flex-wrap: wrap;
+}
+
+.tech p {
+	font-size: 1.2rem;
+	margin-right: 2rem;
+	background-color: var(--mainBlack);
+	padding: 0.7rem;
+	border-radius: .5rem;
+	color: var(--mainPurple);
+}
